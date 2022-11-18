@@ -5,6 +5,9 @@ def men_inicial(x):
 men_inicial("     Pagamentos     ")
 print (10 * ('---'))
 
+
+
+
 def insert_valor(valor):
     insert_valor = valor 
 valor = input("Digite o valor: ")
@@ -14,8 +17,14 @@ if valor.isnumeric():
 else:
     print("Valor Invalído")
     exit()
+  
+  
+  
     
 print (10 * ('---'))
+
+
+
 
 def entrada_card(opcao):
     entrada_card = int (opcao)
@@ -31,13 +40,22 @@ opcao = int (input ('''
 
 :'''))
 
+
+
+
 print (10 * ("---"))
+
+
+
 
 def senha_bd(chama_s):
     senha = 1234
 senha_cred = 2458
 senha_deb = 1234
 chama_s = int (getpass.getpass(prompt="Digite sua senha: ", stream=None))  
+
+
+
 
 '''def tentativa(tent):
     senha_bd()
@@ -48,6 +66,9 @@ while tent < 3:
     if chama_s != senha_cred:
       print ("Senha incorreta") 
       break'''
+      
+      
+      
            
 def opc_cred ():
     entrada_card()
@@ -59,6 +80,10 @@ if opcao == 1:
     else:
         exit() 
         
+        
+        
+            
+        
 def opc_deb():
     entrada_card()
     
@@ -69,6 +94,9 @@ if opcao == 2:
    else:
        exit()
          
+         
+         
+                
 def nf():
     opc_deb()
     insert_valor()
