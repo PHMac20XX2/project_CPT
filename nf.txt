@@ -1,3 +1,0 @@
-      | Nota Fiscal | 
-       Modo de pagamento: Debito 
-       Valor da Conta: R$ 412 
