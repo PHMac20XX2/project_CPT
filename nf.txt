@@ -1,3 +1,14 @@
-      | Nota Fiscal | 
-       Modo de pagamento: Debito 
-       Valor da Conta: R$ 43 
+ 
+             
+             ___________________________________
+             |                                 |
+             |           Nota Fiscal           |  
+             |                                 |
+             |                                 |
+             |    Modo de Pagamento: Debito    |
+             |                                 |
+             |_________________________________|
+              
+             
+                  
+                       Valor da Conta: R$ 342 

@@ -89,8 +89,20 @@ if chama_s == senha_deb: # Caso a senha seja a correta...
 nota = open("nf.txt", "w") # Criando arquivo "nf.txt"
 
 linha = list()
-linha.append("      | Nota Fiscal | \n       ")
-linha.append("Modo de pagamento: Debito \n")
+linha.append(''' 
+             
+             ___________________________________
+             |                                 |
+             |           Nota Fiscal           |  
+             |                                 |
+             |                                 |
+             |    Modo de Pagamento: Debito    |
+             |                                 |
+             |_________________________________|
+              
+                    
+                ''')
+
 linha.append(f"       Valor da Conta: R$ {valor} \n")
 
 nota.writelines(linha)
