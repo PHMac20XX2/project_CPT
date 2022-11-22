@@ -5,6 +5,7 @@ import time
 def pula_linha():
     print()
 
+pula_linha()
 
 def men_inicial(x):
     print (x)
@@ -35,8 +36,9 @@ print (10 * ('____'))
 def entrada_card(opcao):
     entrada_card = int (opcao)
 
-opcao = int (input ('''              
-       Escolha uma das opções:               
+opcao = int (input ('''   
+                    
+            CARTÕES ACEITOS                                
  ______________________________________ 
 |                 ||                   |
 |[1] Crédito      ||[3]Vale-Refeição   |
@@ -45,7 +47,7 @@ opcao = int (input ('''
 |[2] Débito       ||[4]Vale-Alimentação|
 |_________________||___________________|
 
-:'''))
+Escolha uma das opções: '''))
 
 
 print (10 * ("____"))
@@ -84,23 +86,30 @@ if chama_s == senha_deb: # Caso a senha seja a correta...
     print("Gerando nota fiscal")
     # Tempo de carregamento
     time.sleep(2.0)
-    nota = open("nf.txt", "w") # Criando arquivo "nf.txt"
-    print('''
-          
-    ___________________________  
-    |Nota Fiscal Gerada!      |
-    |Obrigado pela preferencia|
-    |_________________________|  
-            
-                                           ''')
+nota = open("nf.txt", "w") # Criando arquivo "nf.txt"
 
-'''linha = list()
+linha = list()
 linha.append("      | Nota Fiscal | \n       ")
 linha.append("Modo de pagamento: Debito \n")
 linha.append(f"       Valor da Conta: R$ {valor} \n")
 
-nota.writelines(linha) # Escrever nas linhas
-nota = open("nf.txt", "r") # Criando arquivo "nf.txt"'''
+nota.writelines(linha)
+
+nota = open("nf.txt", "w") # Criando arquivo "nf.txt"
+
+print('''
+      
+     ___________________________     
+    |                           |  
+    |                           |
+    | Nota Fiscal Gerada!       |
+    | Obrigado pela preferencia |
+    |                           |
+    |___________________________|  
+            
+                                           ''')
+
+
 
 
 
