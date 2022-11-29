@@ -1,33 +1,36 @@
-import getpass
-import time
+import getpass # Módulo para ocultar a senha dos cartões;
+import time #import do módulo TIME para criar um tempo de espera entre as respostas
 
-def pula_linha(): # Função pula linha
+def pula_linha(): # Função pula linha;
     print() 
 
 pula_linha()
 
-def men_inicial(x):
+def men_inicial(x): # Printar a primeira mensagem na tela;
     print (x)
 men_inicial("         -> Restaurante TPC  <-       ")
 
+# Printar uma linha;  
 print (10 * ('____'))
 
 pula_linha()
 
 def insert_valor(valor):
     pula_linha()
-valor = input("Digite o valor: ")
-time.sleep(1.0)
+valor = input("Digite o valor: ") # Inserir o valor da conta;
+time.sleep(1.0) # Cria um tempo de espera no valor de 1 segundo;
 pula_linha()
 if valor.isnumeric():
+    # Caso valor seja numerico, printar o solicitado;
    print (f"Total da conta: R$ {valor} ") 
 else:
+    # Caso não seja numerico
     print("Valor Invalído!")
     exit()  
 
 print (10 * ('____'))
 
-def entrada_card(opcao):
+def entrada_card(opcao): # Função dos cartões aceitos
     pula_linha()
 
 opcao = int (input ('''   
@@ -42,11 +45,12 @@ opcao = int (input ('''
 |_________________||___________________|
 
 Escolha uma das opções: '''))
+
 time.sleep(2.5)
 
 print (10 * ("____"))
 
-if opcao > 4:
+if opcao.isnumeric() > 4: # Caso seja númerico é maior que 4;
     pula_linha()
     print('''
            _____________________
@@ -55,10 +59,11 @@ if opcao > 4:
           |_____________________|
                                    ''')
     print (10 * ("____"))
-    exit()
+    exit() # Parar o código;
     
 def senha_bd(chama_s):
     entrada_card(opcao)
+# Senhas Pré-definidas;
 senha_cred = 2458
 senha_deb = 1234
 senha_vr = 7987
@@ -174,6 +179,7 @@ linha.append(f'''
               
                     
                 ''')
+
 nota.writelines(linha)
 print('''
       
@@ -186,6 +192,7 @@ print('''
      |___________________________|  
             
                                            ''')
+
 nota = open("nf.txt", "r")
 
 
