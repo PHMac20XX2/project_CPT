@@ -111,6 +111,7 @@ if opcao == 1:
                                 ''')
          
          pula_linha()
+         time.sleep(1.5)
          exit()
           
 def opc_deb():   # Função para se caso for escolhido débito
@@ -135,6 +136,7 @@ if opcao == 2:
                                 ''')
              
        pula_linha()
+       time.sleep(1.5)
        exit()
        
 def opc_vr():    # Função para se caso for escolhido vr (vale-refeição)
@@ -159,6 +161,7 @@ if opcao == 3:
                                 ''')
             
       pula_linha()
+      time.sleep(1.5)
       exit()
 
 def opc_va():    # Função para se caso for escolhido va (vale-alimentação)
@@ -183,6 +186,7 @@ if opcao == 4:
                                 ''')
          
      pula_linha()
+     time.sleep(1.5)
      exit()
                              
 # Função para gerar nota fiscal                      
@@ -191,7 +195,7 @@ def nf():
     insert_valor()
 if chama_s == senha_deb or chama_s == senha_cred or chama_s == senha_vr or senha_va: # Caso a senha seja a correta...
     pula_linha()
-    print("        Gerando nota fiscal...     ")
+    print("         Gerando nota fiscal...      ")
     # Tempo de carregamento
     time.sleep(2.0)
 nota = open("nf.txt", "w", encoding="utf-8") # Criando arquivo "nf.txt"
